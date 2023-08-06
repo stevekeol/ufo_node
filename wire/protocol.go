@@ -153,23 +153,21 @@ type BitcoinNet uint32
 // this package does not provide that functionality since it's generally a
 // better idea to simply disconnect clients that are misbehaving over TCP.
 const (
-	//@DONE-UFO-UNDO
-
 	// MainNet represents the main bitcoin network.
-	// MainNet BitcoinNet = 0x16d19cf5 //
-	MainNet BitcoinNet = 0xd9b4bef9 //
+	// MainNet BitcoinNet = 0xd9b4bef9 // BTC
+	MainNet BitcoinNet = 0x16d19cf5 // @UFO
 
 	// TestNet represents the regression test network.
-	// TestNet BitcoinNet = 0xbf6e75a0 //
-	TestNet BitcoinNet = 0xdab5bffa //
+	TestNet BitcoinNet = 0xdab5bffa // BTC
+	// TestNet BitcoinNet = 0xbf6e75a0 // @UFO
 
 	// TestNet3 represents the test network (version 3).
-	// TestNet3 BitcoinNet = 0xcc73dac1 //
-	TestNet3 BitcoinNet = 0x0709110b //
+	TestNet3 BitcoinNet = 0x0709110b // BTC
+	// TestNet3 BitcoinNet = 0xcc73dac1 // @UFO
 
 	// SimNet represents the simulation test network.
-	// SimNet BitcoinNet = 0x1183dbd8 //UFO
-	SimNet BitcoinNet = 0x12141c16 //BTC
+	// SimNet BitcoinNet = 0x12141c16 // BTC
+	SimNet BitcoinNet = 0x1183dbd8 // @UFO
 )
 
 // bnStrings is a map of bitcoin networks back to their constant names for
